@@ -1,0 +1,27 @@
+body {
+  height: 300vh;
+}
+
+h1,
+h2 {
+  margin-bottom: 100vh;
+}
+h2 {
+  text-align: center;
+}
+
+.box,
+.outline {
+  background-color: blueviolet;
+  border-radius: 50%;
+  /* position: fixed; */
+  top: calc(50% - 40px);
+  left: calc(50% - 40px);
+}
+
+.outline {
+  width: 80px;
+  height: 80px;
+  transform: translate(-1px, -1px);
+  outline: dashed 2px red;
+}
