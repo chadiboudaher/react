@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Space+Mono:wght@400;700&display=swap");
 :root {
   --porcelain: #fbfef9ff;
   --shadow-grey: #191923ff;
@@ -6,6 +7,12 @@
   --rosewood: #bf1363ff;
   --burnt-peach: #e67342ff;
   --carrot-orange: #f39237ff;
+}
+
+:root {
+  --display: "Orbitron", sans-serif;
+  --mono: "Space Mono", monospace;
+  --sans: "Inter", sans-serif;
 }
 
 *,
@@ -30,29 +37,32 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 24px 40px;
-  border-bottom: 3px solid var(--burnt-peach);
+  border-bottom: 3px solid var(--dusty-grape);
   z-index: 100;
-  background-color: var(--carrot-orange);
+  background-color: var(--rosewood);
 }
 
 .brand-name {
+  font-family: "Orbitron";
   font-size: 14px;
   font-weight: 700;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.4rem;
   text-transform: uppercase;
   color: var(--porcelain);
 }
 
 .nav-links ul {
+  margin-right: 5rem;
   display: flex;
-  gap: 32px;
+  gap: 4rem;
   list-style: none;
 }
 
 .nav-item a {
+  font-family: var(--mono);
   font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1rem;
   color: var(--porcelain);
   text-decoration: none;
   transition: color 0.3s ease-in;
@@ -65,19 +75,4 @@ body {
 .gsap-header {
   display: flex;
   gap: 1.2rem;
-}
-
-.box-1,
-.box-3,
-.box-5 {
-  width: 20px;
-  height: 20px;
-  background: var(--rosewood);
-}
-
-.box-2,
-.box-4 {
-  width: 20px;
-  height: 20px;
-  background: var(--dusty-grape);
 }

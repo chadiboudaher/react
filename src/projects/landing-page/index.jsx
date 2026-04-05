@@ -105,16 +105,11 @@ export default function LandingPage() {
           <li className="nav-item">
             <a href="#">Contact</a>
           </li>
+          <li className="nav-item">
+            <a href="#">Links</a>
+          </li>
         </ul>
       </nav>
-
-      <div className="gsap-header">
-        <div className="box-1"></div>
-        <div className="box-2"></div>
-        <div className="box-3"></div>
-        <div className="box-4"></div>
-        <div className="box-5"></div>
-      </div>
     </header>
   );
 }
