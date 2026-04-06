@@ -26,90 +26,47 @@ export default function LandingPage() {
     { scope: headerRef },
   );
 
-  useGSAP(() => {
-    gsap.to(
-      ".box-1",
-      {
-        x: -20,
-        rotation: 360,
-        borderRadius: "100%",
-        repeat: -1,
-        yoyo: true,
-      },
-      "<",
-    );
-
-    gsap.to(
-      ".box-2",
-      {
-        x: -20,
-        rotation: 360,
-        borderRadius: "100%",
-        repeat: -1,
-        yoyo: true,
-      },
-      "<",
-    );
-
-    gsap.to(
-      ".box-3",
-      {
-        x: -20,
-        rotation: 360,
-        borderRadius: "100%",
-        repeat: -1,
-        yoyo: true,
-      },
-      "<",
-    );
-
-    gsap.to(
-      ".box-4",
-      {
-        x: -20,
-        rotation: 360,
-        borderRadius: "100%",
-        repeat: -1,
-        yoyo: true,
-      },
-      "<",
-    );
-
-    gsap.to(
-      ".box-5",
-      {
-        x: -20,
-        rotation: 360,
-        borderRadius: "100%",
-        repeat: -1,
-        yoyo: true,
-      },
-      "<",
-    );
-  });
-
   return (
-    <header ref={headerRef} className="header">
-      <p className="brand-name">Chadi</p>
-      <nav className="nav-links">
-        <ul>
-          <li className="nav-item">
-            <a href="#">Work</a>
-          </li>
-          <li className="nav-item">
-            <a href="#">About</a>
-          </li>
-          <li className="nav-item">
-            <a href="#">Projects</a>
-          </li>
-          <li className="nav-item">
-            <a href="#">Contact</a>
-          </li>
-          <li className="nav-item">
-            <a href="#">Links</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <>
+      <header ref={headerRef} className="header">
+        <p className="brand-name">Chadi</p>
+        <nav className="nav-links">
+          <ul>
+            <li className="nav-item">
+              <a href="#">Work</a>
+            </li>
+            <li className="nav-item">
+              <a href="#">About</a>
+            </li>
+            <li className="nav-item">
+              <a href="#">Projects</a>
+            </li>
+            <li className="nav-item">
+              <a href="#">Contact</a>
+            </li>
+            <li className="nav-item">
+              <a href="#">Links</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main className="hero">
+        <div className="hero-left">
+          <span className="hero-tag">— available for work</span>
+          <h1 className="hero-title">
+            <span className="line">CHADI</span>
+            <span className="line">BOUDAHER</span>
+          </h1>
+        </div>
+        <div className="hero-right">
+          <p className="hero-sub">
+            Frontend Developer — I build things for the web
+          </p>
+          <a href="#" className="hero-cta">
+            View my work ↗
+          </a>
+        </div>
+      </main>
+    </>
   );
 }
